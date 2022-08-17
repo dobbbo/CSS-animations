@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,700;1,300&display=swap');
 
 h1 {
-    color: black;
+    color: rgb(34, 0, 255);
     font-family: 'Montserrat', sans-serif;
+    text-shadow: 2px 2px 2px rgb(0, 255, 17);
 }
 
 p {
@@ -14,4 +15,33 @@ p {
 p strong {
     font-weight: 700;
     font-family: 'Montserrat', sans-serif;
+}
+
+.bgimage {
+    width: 200px;
+    height: 200px;
+    background: url('https://placekeanu.com/500/300') black center no-repeat;
+    color: white;
+    padding: 2rem;
+    border-radius: 1rem 2rem 3rem 4rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    background-size: cover;
+    box-shadow: 10px 10px 10px rgb(255, 0, 0);
+}
+
+.overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: 700;
+    width: 100px;
+    height: 100px;
+    background: rgba(255, 255, 0, 0.24);
+    color: white;
+    position: relative;
+    top: -100px;
+    left: 50px;
+    opacity: 1;
 }
