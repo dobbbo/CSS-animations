@@ -4,6 +4,11 @@ h1 {
     color: rgb(34, 0, 255);
     font-family: 'Montserrat', sans-serif;
     text-shadow: 2px 2px 2px rgb(0, 255, 17);
+    transition: all 1s;
+}
+
+h1:hover {
+    font-size: 2.5rem;
 }
 
 p {
@@ -18,30 +23,44 @@ p strong {
 }
 
 .bgimage {
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
     width: 200px;
     height: 200px;
-    background: url('https://placekeanu.com/500/300') black center no-repeat;
+    background: url('https://placekeanu.com/500/500') black center no-repeat;
     color: white;
-    padding: 2rem;
     border-radius: 1rem 2rem 3rem 4rem;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 20px;
     background-size: cover;
     box-shadow: 10px 10px 10px rgb(255, 0, 0);
+    transition: all 1s;
+}
+
+.bgimage:hover {
+    width: 500px;
+    height: 500px;
+}
+
+.bgimage:hover .overlay {
+    transform: translateY(0);
+    background: rgb(255, 0, 0);
+    color: rgb(0, 0, 0);
+    width: 250px;
+    font-size: 2rem;
 }
 
 .overlay {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 2rem;
+    font-size: 0,5rem;
     font-weight: 700;
     width: 100px;
-    height: 100px;
-    background: rgba(255, 255, 0, 0.24);
-    color: white;
-    position: relative;
-    top: -100px;
-    left: 50px;
-    opacity: 1;
+    background: rgba(255, 0, 0, 0);
+    color: rgb(255, 0, 0);
+    padding: 0.5rem;
+    transform: translateY(100%);
+    transition: all 1s;
+    border-radius: 1rem 1rem 0 0;
 }
